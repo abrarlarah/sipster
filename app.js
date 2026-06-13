@@ -610,7 +610,7 @@ function drawFlyer() {
   const ctx = canvas.getContext('2d');
   
   // Read form configurations
-  const url = document.getElementById('qr-url').value || 'https://abrarlarah.github.io/sipster/menu.html';
+  const url = document.getElementById('qr-url').value || 'https://abrarlarah.github.io/sipster/sipster%20menu.pdf';
   const fgColor = document.getElementById('qr-fg-color').value || '#4E7A3E';
   const bgColor = document.getElementById('qr-bg-color').value || '#FFFFFF';
   const labelText = document.getElementById('qr-text').value || 'SCAN FOR MENU';
@@ -773,7 +773,7 @@ function drawFlyer() {
 
 // Download function trigger
 function downloadCanvas(type) {
-  const url = document.getElementById('qr-url').value || 'https://abrarlarah.github.io/sipster/menu.html';
+  const url = document.getElementById('qr-url').value || 'https://abrarlarah.github.io/sipster/sipster%20menu.pdf';
   const fgColor = document.getElementById('qr-fg-color').value || '#4E7A3E';
   const bgColor = document.getElementById('qr-bg-color').value || '#FFFFFF';
   const showLogo = document.getElementById('show-logo').checked;
