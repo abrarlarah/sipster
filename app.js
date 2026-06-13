@@ -369,6 +369,10 @@ function renderMenu(items) {
     section.appendChild(grid);
     container.appendChild(section);
   }
+  
+  if (window.observeNewElements) {
+    window.observeNewElements();
+  }
 }
 
 // Toggle Favorite state
@@ -800,3 +804,56 @@ function downloadCanvas(type) {
     }, 100);
   }
 }
+
+// =========================================================
+// PREMIUM ANIMATIONS (AOS & PARALLAX)
+// =========================================================
+
+function initScrollAnimations() {
+  // Parallax effect for the hero background
+  const heroBg = document.querySelector('.hero-premium-bg');
+  if (heroBg) {
+    window.addEventListener('scroll', () => {
+      const scrollPos = window.scrollY;
+      // Move background 40% of the scroll distance
+      heroBg.style.transform = `translateY(${scrollPos * 0.4}px)`;
+    });
+  }
+
+  // Intersection Observer for fade-in animations
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.15
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('aos-animate');
+        // Optional: stop observing once animated
+        // observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  const animateElements = document.querySelectorAll('[data-aos]');
+  animateElements.forEach(el => observer.observe(el));
+
+  // Also expose a function to trigger animation on newly generated menu cards
+  window.observeNewElements = function() {
+    const newCards = document.querySelectorAll('.menu-card:not(.aos-animate)');
+    newCards.forEach((card, index) => {
+      // Add a slight delay based on index for staggered loading
+      card.style.transitionDelay = `${(index % 10) * 0.05}s`;
+      card.setAttribute('data-aos', 'fade-up');
+      observer.observe(card);
+    });
+  };
+}
+
+// Call init on load
+document.addEventListener('DOMContentLoaded', () => {
+  // Wait a tiny bit to ensure cards are rendered
+  setTimeout(initScrollAnimations, 100);
+});

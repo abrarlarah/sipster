@@ -1,132 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sipster — Fresh Juices, Smoothies & Salads | Baramulla</title>
-  <meta name="description" content="Sipster's digital menu — explore 200+ fresh juices, smoothies, shakes, salads, coffee and signature creations. Fire Service Lane, Baramulla.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='25' y='25' width='50' height='50' rx='10' fill='%23F28F00'/><line x1='50' y1='25' x2='65' y2='10' stroke='%234E7A3E' stroke-width='8'/><rect x='20' y='21' width='60' height='6' fill='%234E7A3E'/></svg>">
+  <meta name="description"
+    content="Sipster's digital menu — explore 200+ fresh juices, smoothies, shakes, salads, coffee and signature creations. Fire Service Lane, Baramulla.">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='25' y='25' width='50' height='50' rx='10' fill='%23F28F00'/><line x1='50' y1='25' x2='65' y2='10' stroke='%234E7A3E' stroke-width='8'/><rect x='20' y='21' width='60' height='6' fill='%234E7A3E'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
   <script src="qrcode.min.js"></script>
 </head>
+
 <body>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-gradient"></div>
-      <div class="hero-grain"></div>
-      <div class="hero-orb hero-orb-1"></div>
-      <div class="hero-orb hero-orb-2"></div>
-      <div class="hero-orb hero-orb-3"></div>
+  <!-- ===== CINEMATIC HERO SECTION ===== -->
+  <section class="hero-premium" id="hero">
+    <div class="hero-premium-bg" style="background-image: url('assets/hero-splash.png');">
+      <div class="hero-premium-overlay"></div>
     </div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Fresh & Natural — Since 2024
+    <div class="hero-premium-content" data-aos="fade-up">
+      <div class="hero-badge premium-badge">
+        <span class="badge-dot glow"></span>
+        Fresh & Natural — Since 2026
+
       </div>
-      <div class="hero-logo-wrap">
-        <svg viewBox="0 0 100 100" class="hero-cup-svg" aria-hidden="true">
-          <rect x="22" y="28" width="56" height="58" rx="10" fill="#F28F00"/>
-          <line x1="50" y1="28" x2="68" y2="6" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
-          <rect x="16" y="22" width="68" height="7" rx="3.5" fill="#fff"/>
-        </svg>
-      </div>
-      <h1 class="hero-title">sipster</h1>
-      <p class="hero-tagline">Juices &bull; Smoothies &bull; Salads</p>
-      <p class="hero-desc">Baramulla's freshest juice bar — handcrafted drinks made from 100% real fruits, delivered from nature to your glass.</p>
-      <div class="hero-cta-row">
-        <a href="#menu" class="hero-cta hero-cta-primary">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-          Explore Menu
+      <h1 class="hero-title-premium">sipster.</h1>
+      <p class="hero-subtitle-premium">Handcrafted juices & smoothies made from 100% real fruits, delivered from nature
+        to your glass.</p>
+
+      <div class="hero-actions">
+        <a href="#signature" class="btn-premium btn-premium-primary">
+          Discover Signatures
         </a>
-        <a href="sipster%20menu.pdf" target="_blank" class="hero-cta hero-cta-ghost">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          View PDF
+        <a href="sipster%20menu.pdf" target="_blank" class="btn-premium btn-premium-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+          </svg>
+          View PDF Menu
         </a>
       </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Menu Items</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Categories</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Fresh Fruits</span></div>
-      </div>
     </div>
-    <a href="#menu" class="hero-scroll" aria-label="Scroll down">
-      <span>Scroll</span>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+    <a href="#signature" class="scroll-indicator" aria-label="Scroll down">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
     </a>
   </section>
 
   <!-- ===== STICKY HEADER ===== -->
-  <header class="site-header" id="site-header">
+  <header class="site-header premium-header" id="site-header">
     <div class="header-inner">
       <a href="#hero" class="header-brand">
-        <svg viewBox="0 0 100 100" class="header-cup" aria-hidden="true">
-          <rect x="25" y="30" width="50" height="55" rx="8" fill="#F28F00"/>
-          <line x1="50" y1="30" x2="65" y2="10" stroke="#4E7A3E" stroke-width="8" stroke-linecap="round"/>
-          <rect x="20" y="24" width="60" height="6" rx="3" fill="#4E7A3E"/>
-        </svg>
         <div class="header-brand-text">
           <strong>sipster</strong>
-          <span>Juices • Smoothies • Salads</span>
         </div>
       </a>
       <nav class="header-tabs">
-        <button class="htab active" id="tab-menu">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h14"/></svg>
-          Menu
-        </button>
-        <button class="htab" id="tab-qr">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-          QR Designer
-        </button>
+        <button class="htab active" id="tab-menu">Menu</button>
+        <button class="htab" id="tab-qr">QR Designer</button>
       </nav>
     </div>
   </header>
 
   <!-- ===== MAIN ===== -->
-  <main class="main" id="menu">
+  <main class="main premium-main" id="menu">
 
     <!-- VIEW: DIGITAL MENU -->
     <section id="view-menu" class="view">
-      <!-- Search -->
-      <div class="search-wrap">
-        <div class="search-bar">
-          <svg class="search-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          <input type="text" id="search-menu" placeholder="Search juices, shakes, salads, coffee..." autocomplete="off">
-        </div>
-      </div>
 
-      <!-- Category Pills -->
-      <div class="pills-track">
-        <div class="pills-scroll">
-          <button class="pill active" data-cat="all">All Items</button>
-          <button class="pill" data-cat="favorites">❤️ Favorites</button>
-          <button class="pill" data-cat="signatures">⭐ Signatures</button>
-          <button class="pill" data-cat="fruit-salads">🍓 Fruit Salads</button>
-          <button class="pill" data-cat="vegetable-salads">🥗 Veg Salads</button>
-          <button class="pill" data-cat="fresh-juices">🍊 Fresh Juices</button>
-          <button class="pill" data-cat="vegetable-juices">🥕 Veggie Juices</button>
-          <button class="pill" data-cat="mixed-juices">🥤 Juice Blends</button>
-          <button class="pill" data-cat="smoothies">🥝 Smoothies</button>
-          <button class="pill" data-cat="yogurt-smoothies">🥛 Yogurt Smoothies</button>
-          <button class="pill" data-cat="shakes">🍫 Shakes</button>
-          <button class="pill" data-cat="iced-teas">🍹 Iced Tea</button>
-          <button class="pill" data-cat="cold-classics">☕ Cold Coffee</button>
-          <button class="pill" data-cat="hot-classics">🔥 Hot Coffee</button>
-          <button class="pill" data-cat="mojitos">🍋 Lemonades</button>
-          <button class="pill" data-cat="ice-creams">🍦 Ice Cream</button>
-          <button class="pill" data-cat="snacks">🥪 Snacks</button>
+      <!-- Signature Highlights -->
+      <section class="signature-highlights" id="signature">
+        <div class="sig-grid">
+          <div class="sig-image-col" data-aos="fade-right">
+            <img src="assets/featured-smoothie.png" alt="Signature Berry Smoothie" class="sig-img">
+          </div>
+          <div class="sig-content-col" data-aos="fade-left">
+            <h4 class="sig-label">Featured Creation</h4>
+            <h2 class="sig-title">The Royal Berry <br> Yogurt Blend</h2>
+            <p class="sig-desc">Our masterfully crafted signature smoothie layering rich Greek yogurt with fresh
+              strawberries, blueberries, and a hint of wild honey. Served with scattered mint leaves.</p>
+            <div class="sig-price">
+              <span class="currency">₹</span>320
+            </div>
+            <a href="#full-menu" class="btn-sig">View Full Menu</a>
+          </div>
         </div>
+      </section>
+
+      <!-- Menu Navigation -->
+      <div id="full-menu" class="menu-nav-section" data-aos="fade-up">
+        <!-- Search -->
+        <div class="search-wrap">
+          <div class="search-bar">
+            <svg class="search-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input type="text" id="search-menu" placeholder="Search juices, shakes, salads, coffee..."
+              autocomplete="off">
+          </div>
+        </div>
+
+        <!-- Category Pills -->
+        <div class="pills-track">
+          <div class="pills-scroll">
+            <button class="pill active" data-cat="all">All Items</button>
+            <button class="pill" data-cat="favorites">❤️ Favorites</button>
+            <button class="pill" data-cat="signatures">⭐ Signatures</button>
+            <button class="pill" data-cat="fruit-salads">🍓 Fruit Salads</button>
+            <button class="pill" data-cat="vegetable-salads">🥗 Veg Salads</button>
+            <button class="pill" data-cat="fresh-juices">🍊 Fresh Juices</button>
+            <button class="pill" data-cat="vegetable-juices">🥕 Veggie Juices</button>
+            <button class="pill" data-cat="mixed-juices">🥤 Juice Blends</button>
+            <button class="pill" data-cat="smoothies">🥝 Smoothies</button>
+            <button class="pill" data-cat="yogurt-smoothies">🥛 Yogurt Smoothies</button>
+            <button class="pill" data-cat="shakes">🍫 Shakes</button>
+            <button class="pill" data-cat="iced-teas">🍹 Iced Tea</button>
+            <button class="pill" data-cat="cold-classics">☕ Cold Coffee</button>
+            <button class="pill" data-cat="hot-classics">🔥 Hot Coffee</button>
+            <button class="pill" data-cat="mojitos">🍋 Lemonades</button>
+            <button class="pill" data-cat="ice-creams">🍦 Ice Cream</button>
+            <button class="pill" data-cat="snacks">🥪 Snacks</button>
+          </div>
+        </div>
+
       </div>
+      <!-- End Menu Navigation -->
 
       <!-- Menu Heading -->
-      <div class="menu-heading">
+      <div class="menu-heading" data-aos="fade-up">
         <h2 id="menu-list-heading">All Menu Items</h2>
         <span class="item-count" id="menu-count"></span>
       </div>
@@ -193,11 +203,15 @@
             </label>
             <div class="btn-row">
               <button type="button" id="download-qr-only" class="btn-out">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                </svg>
                 QR Only
               </button>
               <button type="button" id="download-flyer" class="btn-fill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                </svg>
                 Download Flyer
               </button>
             </div>
@@ -205,7 +219,10 @@
         </div>
         <!-- Preview -->
         <div class="qr-panel qr-preview">
-          <div class="qr-panel-head"><h3>Live Preview</h3><p>High-res printable canvas render.</p></div>
+          <div class="qr-panel-head">
+            <h3>Live Preview</h3>
+            <p>High-res printable canvas render.</p>
+          </div>
           <div class="canvas-wrap">
             <canvas id="flyer-preview-canvas" width="600" height="850"></canvas>
           </div>
@@ -218,7 +235,11 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <svg viewBox="0 0 100 100" class="footer-cup" aria-hidden="true"><rect x="25" y="30" width="50" height="55" rx="8" fill="#F28F00"/><line x1="50" y1="30" x2="65" y2="10" stroke="#4E7A3E" stroke-width="8" stroke-linecap="round"/><rect x="20" y="24" width="60" height="6" rx="3" fill="#4E7A3E"/></svg>
+        <svg viewBox="0 0 100 100" class="footer-cup" aria-hidden="true">
+          <rect x="25" y="30" width="50" height="55" rx="8" fill="#F28F00" />
+          <line x1="50" y1="30" x2="65" y2="10" stroke="#4E7A3E" stroke-width="8" stroke-linecap="round" />
+          <rect x="20" y="24" width="60" height="6" rx="3" fill="#4E7A3E" />
+        </svg>
         <strong>sipster</strong>
       </div>
       <p>&copy; 2026 Sipster &mdash; Fire Service Lane, Baramulla</p>
@@ -231,9 +252,13 @@
 
   <!-- Back to Top -->
   <button id="back-to-top" class="btt" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <line x1="12" y1="19" x2="12" y2="5" />
+      <polyline points="5 12 12 5 19 12" />
+    </svg>
   </button>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=4"></script>
 </body>
+
 </html>
