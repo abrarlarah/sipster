@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Header scroll shadow effect
 function setupHeaderScroll() {
-  const header = document.getElementById('app-header');
+  const header = document.getElementById('site-header');
   if (!header) return;
   window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 100);
@@ -386,7 +386,7 @@ function toggleFavorite(name, btn) {
   localStorage.setItem('sipster_favorites', JSON.stringify(favorites));
 
   // If we are in the "Favorites" tab view, filter on fly
-  const activeTab = document.querySelector('.category-pill.active');
+  const activeTab = document.querySelector('.pill.active');
   if (activeTab && activeTab.dataset.cat === 'favorites') {
     filterMenu();
   }
@@ -401,7 +401,7 @@ function setupEventListeners() {
   }
 
   // Category pills navigation
-  const pills = document.querySelectorAll('.category-pill');
+  const pills = document.querySelectorAll('.pill');
   pills.forEach(pill => {
     pill.addEventListener('click', () => {
       pills.forEach(p => p.classList.remove('active'));
@@ -459,7 +459,7 @@ function setupEventListeners() {
 // Core filtering logic for text search & category pills
 function filterMenu() {
   const searchVal = document.getElementById('search-menu').value.toLowerCase().trim();
-  const activeTab = document.querySelector('.category-pill.active');
+  const activeTab = document.querySelector('.pill.active');
   const activeCat = activeTab ? activeTab.dataset.cat : 'all';
 
   let filtered = MENU_ITEMS;
