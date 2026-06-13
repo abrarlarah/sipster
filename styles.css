@@ -507,15 +507,182 @@ button{font-family:inherit;cursor:pointer}
   padding-top: 0;
 }
 .menu-nav-section {
-  background: var(--cream);
+  background: var(--g900);
   padding-top: 80px;
   position: relative;
   z-index: 10;
   border-radius: 40px 40px 0 0;
   margin-top: -40px;
+  border-top: 1px solid rgba(255,255,255,0.05);
 }
 
 @media(max-width: 960px) {
   .sig-grid { grid-template-columns: 1fr; gap: 40px; }
   .sig-img { transform: scale(1); }
+}
+
+/* =========================================================
+   FULL SITE PREMIUM DARK OVERRIDES
+   ========================================================= */
+
+body {
+  background: var(--g900) !important;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Typography & Headings */
+.menu-heading h2, .category-section-title {
+  color: var(--white);
+}
+.category-section-title {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.item-count {
+  color: rgba(255,255,255,0.5);
+}
+.no-results {
+  background: rgba(255,255,255,0.02);
+  border-color: rgba(255,255,255,0.1);
+}
+
+/* Search Bar */
+.search-bar input {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--white);
+}
+.search-bar input::placeholder {
+  color: rgba(255,255,255,0.3);
+}
+.search-bar input:focus {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--o500);
+  box-shadow: 0 0 0 4px rgba(242, 143, 0, 0.15);
+}
+.search-bar-icon {
+  color: rgba(255,255,255,0.5);
+}
+
+/* Category Pills */
+.pill {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.7);
+}
+.pill:hover {
+  border-color: rgba(255,255,255,0.3);
+  color: var(--white);
+}
+.pill.active {
+  background: var(--o500);
+  color: var(--white);
+  border-color: var(--o500);
+  box-shadow: 0 4px 20px rgba(242, 143, 0, 0.3);
+}
+
+/* Menu Cards (Glassmorphism) */
+.menu-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+.menu-card:hover {
+  border-color: rgba(255,255,255,0.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 20px rgba(255,255,255,0.02);
+  transform: translateY(-5px);
+}
+.featured-card {
+  background: linear-gradient(150deg, rgba(255,255,255,0.05) 0%, rgba(242,143,0,0.1) 100%);
+  border-color: rgba(242,143,0,0.3);
+}
+
+.card-title-area h4 {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--white);
+  letter-spacing: 0.02em;
+}
+
+/* Price Badges */
+.price-badge {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.05);
+}
+.single-price {
+  background: rgba(255,255,255,0.08);
+}
+.price-lbl {
+  color: rgba(255,255,255,0.5);
+}
+.price-val {
+  color: var(--white);
+}
+
+/* Favorite Button */
+.fav-btn {
+  background: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.3);
+}
+.fav-btn:hover {
+  background: rgba(255,255,255,0.1);
+  color: #EF4444;
+}
+.fav-btn.active {
+  color: #EF4444;
+}
+
+/* Tag Pills (Dark Mode Adjustments) */
+[class^="tag-"] {
+  background: rgba(255,255,255,0.08) !important;
+  color: rgba(255,255,255,0.8) !important;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+.tag-signature {
+  background: var(--o500) !important;
+  color: var(--white) !important;
+  box-shadow: 0 0 10px rgba(242, 143, 0, 0.3);
+}
+
+/* QR Designer (Dark Glass) */
+.qr-panel {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+.qr-panel-head h3 {
+  color: var(--white);
+}
+.qr-panel-head p {
+  color: rgba(255,255,255,0.5);
+}
+.qr-panel-head {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.field label {
+  color: rgba(255,255,255,0.6);
+}
+.field input[type="url"], .field input[type="text"], .field select {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--white);
+}
+.field input:focus, .field select:focus {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--o500);
+  box-shadow: 0 0 0 3px rgba(242, 143, 0, 0.15);
+}
+.color-wrap {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.color-wrap span {
+  color: rgba(255,255,255,0.7);
+}
+.check-row span {
+  color: rgba(255,255,255,0.7);
+}
+.canvas-wrap {
+  background: #ffffff; /* Keep canvas background white for scannability */
+  border-color: rgba(255,255,255,0.1);
+  padding: 10px;
 }
