@@ -1,0 +1,4 @@
+node_modules/
+package-lock.json
+generate_qr.py
+generate_qr.js

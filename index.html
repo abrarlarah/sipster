@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sipster — Juices • Smoothies • Salads | Baramulla</title>
+  <meta name="description" content="Sipster's fresh digital menu. Discover juices, smoothies, salads, shakes, coffee and signature creations. Located at Fire Service Lane, Baramulla.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='25' y='25' width='50' height='50' rx='10' fill='%23F28F00'/><line x1='50' y1='25' x2='65' y2='10' stroke='%234E7A3E' stroke-width='8'/><rect x='20' y='21' width='60' height='6' fill='%234E7A3E'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="qrcode.min.js"></script>
+</head>
+<body>
+
+  <!-- Hero Banner -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles">
+      <div class="particle p1"></div>
+      <div class="particle p2"></div>
+      <div class="particle p3"></div>
+      <div class="particle p4"></div>
+      <div class="particle p5"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-logo">
+        <svg viewBox="0 0 100 100" class="hero-svg-logo">
+          <rect x="25" y="30" width="50" height="55" rx="8" fill="#F28F00" />
+          <line x1="50" y1="30" x2="65" y2="10" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+          <rect x="20" y="24" width="60" height="6" fill="#fff" rx="3" />
+        </svg>
+      </div>
+      <h1 class="hero-title">sipster</h1>
+      <p class="hero-tagline">Juices &bull; Smoothies &bull; Salads</p>
+      <p class="hero-subtitle">Fresh, vibrant & crafted with love — Baramulla's favorite juice bar</p>
+      <div class="hero-actions">
+        <a href="#menu" class="hero-btn hero-btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Browse Menu
+        </a>
+        <a href="menu.html" class="hero-btn hero-btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          View PDF Menu
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll to explore</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+    </div>
+  </section>
+
+  <!-- Sticky Navigation Header -->
+  <header class="app-header" id="app-header">
+    <div class="header-container">
+      <div class="brand-logo" id="logo-trigger">
+        <div class="logo-icon">
+          <svg viewBox="0 0 100 100" class="svg-logo">
+            <rect x="25" y="30" width="50" height="55" rx="8" fill="#F28F00" />
+            <line x1="50" y1="30" x2="65" y2="10" stroke="#4E7A3E" stroke-width="8" stroke-linecap="round"/>
+            <rect x="20" y="24" width="60" height="6" fill="#4E7A3E" rx="3" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h2 class="brand-title">sipster</h2>
+          <p class="tagline">Juices • Smoothies • Salads</p>
+        </div>
+      </div>
+      <nav class="view-navigation">
+        <button id="tab-menu" class="nav-tab active">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tab-icon"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Menu
+        </button>
+        <button id="tab-qr" class="nav-tab">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tab-icon"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          QR Designer
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content" id="menu">
+    <!-- VIEW 1: Digital Menu -->
+    <section id="view-menu" class="content-view">
+      <div class="filter-shelf">
+        <div class="search-box-wrapper">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="search-menu" placeholder="Search juices, shakes, salads, coffee..." aria-label="Search menu items">
+        </div>
+        <div class="category-scrollbar">
+          <div class="category-pills-container">
+            <button class="category-pill active" data-cat="all">All Items</button>
+            <button class="category-pill" data-cat="favorites">❤️ Favorites</button>
+            <button class="category-pill" data-cat="signatures">⭐ Signatures</button>
+            <button class="category-pill" data-cat="fruit-salads">🍓 Fruit Salads</button>
+            <button class="category-pill" data-cat="vegetable-salads">🥗 Veg Salads</button>
+            <button class="category-pill" data-cat="fresh-juices">🍊 Fresh Juices</button>
+            <button class="category-pill" data-cat="vegetable-juices">🥕 Veggie Juices</button>
+            <button class="category-pill" data-cat="mixed-juices">🥤 Juice Blends</button>
+            <button class="category-pill" data-cat="smoothies">🥝 Smoothies</button>
+            <button class="category-pill" data-cat="yogurt-smoothies">🥛 Yogurt Smoothies</button>
+            <button class="category-pill" data-cat="shakes">🍫 Shakes</button>
+            <button class="category-pill" data-cat="iced-teas">🍹 Iced Tea</button>
+            <button class="category-pill" data-cat="cold-classics">☕ Cold Coffee</button>
+            <button class="category-pill" data-cat="hot-classics">🔥 Hot Coffee</button>
+            <button class="category-pill" data-cat="mojitos">🍋 Lemonades</button>
+            <button class="category-pill" data-cat="ice-creams">🍦 Ice Cream</button>
+            <button class="category-pill" data-cat="snacks">🥪 Snacks</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-view-header">
+        <h2 id="menu-list-heading">All Menu Items</h2>
+        <span class="menu-count" id="menu-count"></span>
+      </div>
+      <div id="menu-items-container" class="menu-items-container"></div>
+    </section>
+
+    <!-- VIEW 2: QR Code & Flyer Designer -->
+    <section id="view-qr" class="content-view hidden-view">
+      <div class="admin-grid">
+        <div class="admin-panel control-panel">
+          <div class="panel-header">
+            <h3>QR Code & Flyer Designer</h3>
+            <p>Design your print-ready QR code table standee for Sipster.</p>
+          </div>
+          <form id="qr-customizer-form" class="customizer-form" onsubmit="event.preventDefault();">
+            <div class="form-group">
+              <label for="qr-url">Scan Destination URL</label>
+              <input type="url" id="qr-url" value="https://abrarlarah.github.io/sipster/menu.html" placeholder="https://yoursite.com/menu">
+              <small class="form-hint">This URL opens when customers scan the QR code. Points to your hosted PDF viewer.</small>
+            </div>
+            <div class="form-row">
+              <div class="form-group half-width">
+                <label for="qr-fg-color">QR Color</label>
+                <div class="color-picker-wrapper">
+                  <input type="color" id="qr-fg-color" value="#4E7A3E">
+                  <span class="color-text">Brand Green</span>
+                </div>
+              </div>
+              <div class="form-group half-width">
+                <label for="qr-bg-color">QR Background</label>
+                <div class="color-picker-wrapper">
+                  <input type="color" id="qr-bg-color" value="#FFFFFF">
+                  <span class="color-text">White</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="qr-text">Call to Action Text</label>
+              <input type="text" id="qr-text" value="SCAN FOR MENU" placeholder="e.g. SCAN ME">
+            </div>
+            <div class="form-row">
+              <div class="form-group half-width">
+                <label for="qr-text-color">Text Color</label>
+                <div class="color-picker-wrapper">
+                  <input type="color" id="qr-text-color" value="#4E7A3E">
+                </div>
+              </div>
+              <div class="form-group half-width">
+                <label for="qr-border-color">Border Color</label>
+                <div class="color-picker-wrapper">
+                  <input type="color" id="qr-border-color" value="#4E7A3E">
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group half-width">
+                <label for="flyer-layout">Layout</label>
+                <select id="flyer-layout">
+                  <option value="portrait-stand" selected>Portrait Stand</option>
+                  <option value="square-sticker">Square Sticker</option>
+                </select>
+              </div>
+              <div class="form-group half-width">
+                <label for="table-number">Table No.</label>
+                <input type="text" id="table-number" placeholder="e.g. 12">
+              </div>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="show-logo" checked>
+              <label for="show-logo">Show Sipster logo in QR center</label>
+            </div>
+            <div class="form-actions">
+              <button type="button" id="download-qr-only" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                Download QR Only
+              </button>
+              <button type="button" id="download-flyer" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                Download Table Flyer
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="admin-panel preview-panel">
+          <div class="panel-header">
+            <h3>Print Preview</h3>
+            <p>Live high-resolution canvas render of your table flyer.</p>
+          </div>
+          <div class="canvas-scroll-container">
+            <div class="canvas-shadow-wrapper">
+              <canvas id="flyer-preview-canvas" width="600" height="850"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <svg viewBox="0 0 100 100" class="footer-logo">
+          <rect x="25" y="30" width="50" height="55" rx="8" fill="#F28F00" />
+          <line x1="50" y1="30" x2="65" y2="10" stroke="#4E7A3E" stroke-width="8" stroke-linecap="round"/>
+          <rect x="20" y="24" width="60" height="6" fill="#4E7A3E" rx="3" />
+        </svg>
+        <span class="footer-brand-name">sipster</span>
+      </div>
+      <p class="copyright">&copy; 2026 Sipster. Fire Service Lane, Baramulla.</p>
+      <div class="footer-links">
+        <a href="menu.html">View PDF Menu</a>
+        <a href="sipster%20menu.pdf" download>Download PDF</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>
